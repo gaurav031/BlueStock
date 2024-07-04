@@ -1,0 +1,69 @@
+/* Base styles for mobile-first design */
+
+.logo {
+  padding-left: 10px; /* Adjust padding for smaller screens */
+  height: 100px;
+  width: auto; /* Adjust width for smaller screens */
+}
+
+.title {
+  font-weight: bold;
+  font-size: 22px; /* Adjust font size for smaller screens */
+}
+
+.text-header {
+  margin-left: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgba(146, 145, 145, 0.964);
+}
+
+#navbarScrollingDropdown {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(146, 145, 145, 0.964);
+}
+
+.nav-btn {
+  margin-left: -200px;
+  font-size: 13px;
+  background-color: white;
+  color: rgba(146, 145, 145, 0.964);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .logo {
+    padding-left: 30px; /* Adjust padding for medium screens */
+    height: 50px; /* Adjust height for medium screens */
+  }
+  .title {
+    font-size: 26px; /* Adjust font size for medium screens */
+    margin-left: 20px; /* Adjust margin for medium screens */
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .logo {
+    padding-left: 40px;
+    height: 40px;
+  }
+  .title {
+    font-size: 28px;
+    margin-left: 20px; /* Adjust margin for large screens */
+  }
+}
+
+/* Optional: Specific adjustments for very small devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .logo {
+    padding-left: 10px; /* Adjust padding for very small screens */
+    height: 40px; /* Adjust height for very small screens */
+    width: auto; /* Adjust width for very small screens */
+  }
+  .title {
+    font-size: 20px; /* Adjust font size for very small screens */
+    margin-left: 5px; /* Ensure the title is close to the logo */
+  }
+}
