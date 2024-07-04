@@ -14,11 +14,11 @@ const Section = () => {
                 </ListGroup.Item>
 
                 {/* IPO Section */}
-                <div className="col-md-4 d-flex align-items-stretch">
-                    <div className="card shadow-sm p-3 mb-5 bg-white rounded custom-card">
-                        <div className="card-body">
+                <div className="col-md-4 d-flex align-items-stretch card-section" style={{ width: '400px', height:"auto"}}>
+                    <div className="card shadow-sm p-3 mb-5 bg-white rounded custom-card" >
+                        <div className="card-body " >
                             <div className="d-flex align-items-center mb-3">
-                                <img src={nova} alt="Nova" style={{ height: '30px', marginRight: '10px' }} />
+                                <img src={nova} alt="Nova" style={{ height: '30px', marginRight: '30px', marginLeft:'-10px' }} />
                                 <h5 className="text-primary mb-0 company-title">Nova Agritech Ltd.</h5>
                             </div>
                             <div className="row">
@@ -26,11 +26,11 @@ const Section = () => {
                                     <p className="mb-1"><strong>PRICE BAND</strong></p>
                                     <p>Rs 39 - 41</p>
                                 </div>
-                                <div className="col-4">
+                                <div className="col-4 open">
                                     <p className="mb-1"><strong>OPEN</strong></p>
                                     <p>2024-01-22</p>
                                 </div>
-                                <div className="col-4">
+                                <div className="col-4 close">
                                     <p className="mb-1"><strong>CLOSE</strong></p>
                                     <p>2024-01-24</p>
                                 </div>
@@ -38,22 +38,23 @@ const Section = () => {
                                     <p className="mb-1"><strong>ISSUE SIZE</strong></p>
                                     <p>143.81 Cr.</p>
                                 </div>
-                                <div className="col-4">
+                                <div className="col-4 issue-type">
                                     <p className="mb-1"><strong>ISSUE TYPE</strong></p>
                                     <p>Book Built</p>
                                 </div>
-                                <div className="col-4">
+                                <div className="col-4 listing-date">
                                     <p className="mb-1"><strong>LISTING DATE</strong></p>
                                     <p>2024-01-30</p>
                                 </div>
                             </div>
-                            <div className="d-flex mt-3 ">
+                            <div className="d-flex mt-3">
                                 <button className="btn btn-outline-primary btn-sm">RHP</button>
-                                <button className="btn btn-danger btn-sm ">DRHP</button>
+                                <button className="btn btn-danger btn-sm">DRHP</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </section>
         </>
     );

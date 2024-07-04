@@ -16,15 +16,45 @@ p{
 
 
 /*  Card */
+.card-section {
+    margin: 0px 30px 0px 30px;
+}
 
 .custom-card {
     margin-top: 0px 30px 0px 30px;
-    width: 80%; /* Full width within the column */
+    width: 100%; /* Full width within the column */
     min-width: 100px; /* Minimum width to ensure content fits */
     flex: 1; /* Flex grow to ensure it stretches within the column */
-  }
-.btn{
-    width: 70px;
+}
+
+.btn {
     margin-left: 10px;
 }
-  
+
+.close,
+.open,
+.issue-type,
+.listing-date {
+    margin-left: -20px;
+}
+
+/* Media query for small devices and mobile phones */
+@media (max-width: 767.98px) {
+    .close,
+    .open,
+    .issue-type,
+    .listing-date {
+        margin-left: 0; /* Reset margin for small devices */
+        flex: 1 1 100%; /* Ensure full width */
+    }
+
+    .custom-card {
+        width: 80%; /* Full width within the column */
+        min-width: 100px; /* Minimum width to ensure content fits */
+        margin-top: 0px 10px 0px 10px;
+    }
+    .card-section {
+        margin: 0 10px 0 10px; /* Adjust margin for small devices */
+        max-width: fit-content;
+    }
+}

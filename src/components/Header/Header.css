@@ -2,13 +2,13 @@
 
 .logo {
   padding-left: 10px; /* Adjust padding for smaller screens */
-  height: 100px;
+  height: 70px;
   width: auto; /* Adjust width for smaller screens */
 }
 
 .title {
   font-weight: bold;
-  font-size: 22px; /* Adjust font size for smaller screens */
+  font-size: 50px; /* Adjust font size for smaller screens */
 }
 
 .text-header {
@@ -27,18 +27,18 @@
 .nav-btn {
   margin-left: -200px;
   font-size: 13px;
-  background-color: white;
-  color: rgba(146, 145, 145, 0.964);
+
 }
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .logo {
     padding-left: 30px; /* Adjust padding for medium screens */
-    height: 50px; /* Adjust height for medium screens */
+    height: 30px; /* Adjust height for medium screens */
   }
   .title {
-    font-size: 26px; /* Adjust font size for medium screens */
+    font-size: 36px; /* Adjust font size for medium screens */
     margin-left: 20px; /* Adjust margin for medium screens */
   }
 }
@@ -47,10 +47,10 @@
 @media (min-width: 992px) {
   .logo {
     padding-left: 40px;
-    height: 40px;
+    height: 30px;
   }
   .title {
-    font-size: 28px;
+    font-size: 38px;
     margin-left: 20px; /* Adjust margin for large screens */
   }
 }
@@ -59,11 +59,11 @@
 @media (max-width: 576px) {
   .logo {
     padding-left: 10px; /* Adjust padding for very small screens */
-    height: 40px; /* Adjust height for very small screens */
+    height: 30px; /* Adjust height for very small screens */
     width: auto; /* Adjust width for very small screens */
   }
   .title {
-    font-size: 20px; /* Adjust font size for very small screens */
-    margin-left: 5px; /* Ensure the title is close to the logo */
+    font-size: 30px; /* Adjust font size for very small screens */
+    margin-left: 0px; /* Ensure the title is close to the logo */
   }
 }

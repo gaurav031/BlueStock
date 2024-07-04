@@ -17,7 +17,7 @@ const Header = () => {
           <img src={logo} alt="Logo" className="d-inline-block align-top logo" />
         </Navbar.Brand>
         <Navbar.Brand href="#" className='title'>BlueStock</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll">
+        <Navbar.Toggle aria-controls="navbarScroll" className='vector'>
         <img src={vector} alt="" />
         </Navbar.Toggle>
        
