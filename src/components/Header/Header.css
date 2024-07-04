@@ -1,15 +1,15 @@
 /* Base styles for mobile-first design */
 
 .logo {
-  padding-left: 10px; /* Adjust padding for smaller screens */
+  margin-left: 30px; /* Adjust padding for smaller screens */
   height: 70px;
   width: auto; /* Adjust width for smaller screens */
 }
 
-.title {
+/* .title {
   font-weight: bold;
   font-size: 50px; /* Adjust font size for smaller screens */
-}
+ */
 
 .text-header {
   margin-left: 30px;
@@ -34,7 +34,8 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .logo {
-    padding-left: 30px; /* Adjust padding for medium screens */
+    padding-left: 10px; /* Adjust padding for medium screens */
+    margin-left: 10px;
     height: 30px; /* Adjust height for medium screens */
   }
   .title {
@@ -46,7 +47,8 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .logo {
-    padding-left: 40px;
+    padding-left: 10px;
+    margin-left: 10px;
     height: 30px;
   }
   .title {
@@ -59,6 +61,7 @@
 @media (max-width: 576px) {
   .logo {
     padding-left: 10px; /* Adjust padding for very small screens */
+    margin-left: 10px;
     height: 30px; /* Adjust height for very small screens */
     width: auto; /* Adjust width for very small screens */
   }

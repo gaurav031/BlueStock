@@ -1,0 +1,148 @@
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.first-division,
+.second-division {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.social-media-links {
+    display: flex;
+    margin-left: -20px;
+    margin-top: 50px;
+  }
+
+.social-media-links a {
+    text-decoration: none;
+    color: #333;
+    padding-left: 20px;
+  
+}
+
+.social-media-links img {
+    width: 30px;
+    height: 30px;
+}
+
+.text-uppercase {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.list-unstyled li {
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 9%;
+}
+
+.text-center1 {
+    display: flex;
+    align-items: center;
+    margin-top: -200px;
+    background-color: #fff;
+}
+
+.left-span {
+    display: flex;
+    margin-top: 220px;
+    margin-left: -230px;
+    font-size: 26px;
+}
+
+.right-span {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 150px;
+}
+.text-center{
+    margin-left: -10px;
+    display: flex;
+}
+.heart{
+    margin-left: 830px;
+}
+.startup {
+    display: flex;
+    margin-top: 450px;
+    margin-left: -90px;
+}
+@media screen and (max-width: 750px) {
+    .social-media-links img {
+        width: 20px;
+        height: auto;
+        padding: 1px;
+    }
+
+    .text-uppercase {
+        font-size: 10px;
+        text-align: left;
+        font-weight: bold;
+        padding-bottom: 15px;
+    }
+
+    .list-unstyled li {
+        font-size: 10px;
+        text-align: left;
+    }
+
+    .flex-container {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .text-center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-span,
+    .right-span {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .text-center1 {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 0 0;
+    }
+    .heart{
+        margin-left: 0;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .col-lg-2 {
+        flex: 0 0 48%; /* Two items per row with some gap */
+        max-width: 48%;
+        margin-bottom: 1rem;
+    }
+
+    .startup {
+        margin: 20px 0;
+    }
+}

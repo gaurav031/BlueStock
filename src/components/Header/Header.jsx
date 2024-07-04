@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../../assets/image/logo.png'
+import fulllogo from '../../assets/image/fulllogo.png'
 import vector from '../../assets/image/Vector.png'
 import './Header.css'
 
@@ -14,9 +15,9 @@ const Header = () => {
 
       <Container fluid>
         <Navbar.Brand href="/">
-          <img src={logo} alt="Logo" className="d-inline-block align-top logo" />
+          <img src={fulllogo} alt="Logo" className="d-inline-block align-top logo" />
         </Navbar.Brand>
-        <Navbar.Brand href="#" className='title'>BlueStock</Navbar.Brand>
+        {/* <Navbar.Brand href="#" className='title'>BlueStock</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="navbarScroll" className='vector'>
         <img src={vector} alt="" />
         </Navbar.Toggle>
