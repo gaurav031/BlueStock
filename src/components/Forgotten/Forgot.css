@@ -1,0 +1,40 @@
+/* ForgotPassword.css */
+
+.forgot-password {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+}
+.text-center{
+    justify-content: center ;
+}
+
+@media (max-width: 576px) {
+    .card {
+        padding: 1rem;
+    }
+
+    .mb-4.text-center img {
+        padding-left: 20px;
+      }
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 1.5rem;
+    }
+
+    .mb-4.text-center img {
+        margin-left: -100px;
+      }
+    
+}

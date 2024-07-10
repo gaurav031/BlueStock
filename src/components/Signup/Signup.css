@@ -1,0 +1,85 @@
+/* Signup.css */
+
+.signup {
+    background-color: #f8f9fa;
+    padding-top: 25px;
+   height: 800px;
+}
+
+.card {
+    border: none;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.sign-up{
+    border: #edecec solid 2px;
+    padding: 10px 10px 10px 10px;
+    background-color: #e1e0e0;
+    font-size: 5px;
+   
+}
+
+.btn-outline-secondary {
+    border: none;
+}
+
+.text-center.mb-3.d-flex.align-items-center span {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.recaptcha-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.text-sign {
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+    .card {
+        padding: 1rem;
+    }
+
+    .recaptcha-container {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .mb-4.text-center img {
+        padding-left: 20px;
+    }
+
+    .toggle-icon {
+        height: 20px;
+        width: 20px;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 1.5rem;
+    }
+
+    .recaptcha-container {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+
+    .mb-4.text-center img {
+        margin-left: -100px;
+    }
+
+    .toggle-icon {
+        height: 22px;
+        width: 22px;
+        margin-bottom: -25px;
+        padding-top: 0px;
+    }
+
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Navbar.css';
+import './Footer.css'; // Importing custom CSS for additional styling
 import twitter from '../../assets/image/twitter.png';
 import facebook from '../../assets/image/facebook.png';
 import instagram from '../../assets/image/instagram.png';
@@ -9,13 +9,18 @@ import telegram from '../../assets/image/telegram.png';
 import logo from '../../assets/image/fulllogo.png';
 import startup from '../../assets/image/startup.png';
 
-const Navbar = () => {
+/**
+ * Footer component representing the navigation bar at the bottom of the page.
+ * Includes sections for Resources, Company information, Offerings, Links, and Policy,
+ * as well as social media links, company details, and legal disclaimers.
+ */
+const Footer = () => {
     return (
         <footer className="text-center text-lg-start">
             {/* Grid container */}
-            <div className="container p-4" style={{ backgroundColor: 'transparent', marginRight: '1px' }}>
-                {/*Grid row*/}
-                <div className="row justify-content-center" style={{ fontSize: 'small' }}>
+            <div className="container p-4" style={{ backgroundColor: 'transparent', marginRight: '1px',marginLeft:'160px',fontSize: 'medium' }}>
+                {/* Grid row */}
+                <div className="row justify-content-center" style={{ fontSize: 'medium' }}>
                     <div className="col-lg-2 col-md-6 mb-4">
                         <h5 className="text-uppercase" style={{ fontSize: '12px' }}>Resources</h5>
                         <ul className="list-unstyled mb-0">
@@ -72,6 +77,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
+                {/* Social media links */}
                 <div className="social-media-links">
                     <a href="#!"><img src={facebook} alt="Facebook" /></a>
                     <a href="#!"><img src={twitter} alt="Twitter" /></a>
@@ -80,6 +86,7 @@ const Navbar = () => {
                     <a href="#!"><img src={telegram} alt="Telegram" /></a>
                 </div>
 
+                {/* Company details */}
                 <div className="text-center1">
                     <a href="#!"><img src={logo} alt="logo" /></a>
                     <div className="left-span">
@@ -106,6 +113,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <hr style={{ width: '90%'}} />
+                {/* Footer bottom */}
                 <div className="text-center py-3">
                     <div>
                     <p className="mb-0">
@@ -126,4 +134,4 @@ const Navbar = () => {
     );
 }
 
-export default Navbar;
+export default Footer;

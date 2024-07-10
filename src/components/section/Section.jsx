@@ -1,35 +1,40 @@
 import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
-import './Section.css';
+import './Section.css'; // Custom CSS for additional styling
 import { useState } from 'react';
 import { Accordion, Card, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
-import { IPO, questions } from '../../constants'
+import { IPO, questions } from '../../constants'; // Importing IPO data and questions from constants
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+/**
+ * Component representing a section with Upcoming IPO details and Frequently Asked Questions (FAQ).
+ * Displays IPO details like company name, price band, open/close dates, and FAQ questions with collapsible answers.
+ */
 const Section = () => {
-    const [activeKey, setActiveKey] = useState(null);
+    const [activeKey, setActiveKey] = useState(null); // State to manage active accordion item
 
+    // Function to toggle accordion item open/close
     const toggleAccordion = (key) => {
         setActiveKey(activeKey === key ? null : key);
     };
+
     return (
         <>
             <section className="section-field">
 
-                {/* ------------------------ Title Section------------------------------------------------------- */}
-
+                {/* Title Section */}
                 <ListGroup.Item className='section-title'>
                     <h1>Upcoming IPO</h1>
                     <p>Companies that have filed for an IPO with SEBI. Few details might be disclosed by the companies later.</p>
                 </ListGroup.Item>
-                {/*------------------------- IPO Section -----------------------------------------------------------*/}
 
+                {/* IPO Section */}
                 <div className="container">
                     <div className="row" style={{ marginLeft: -50 }}>
                         {IPO.map((ipo) => (
-                            <div className="col-md-4 col-sm-12 d-flex align-items-stretch card-section">
+                            <div className="col-md-4 col-sm-12 d-flex align-items-stretch card-section" key={ipo.companyName}>
                                 <div className="card shadow-sm p-3 mb-5 bg-white rounded custom-card">
                                     <div className="card-body">
                                         <div className="d-flex align-items-center mb-3">
@@ -72,7 +77,8 @@ const Section = () => {
                         ))}
                     </div>
                 </div>
-                {/*----------------------------------QUESTIONS----------------------------------------------------------- */}
+
+                {/* Frequently Asked Questions Section */}
                 <ListGroup.Item className='section-title'>
                     <h1> Frequently Asked Questions?</h1>
                     <p>Find answers to common questions that come in your mind related to IPO..</p>
